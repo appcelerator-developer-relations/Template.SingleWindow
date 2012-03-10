@@ -1,13 +1,11 @@
 //Application Window Component Constructor
 function ApplicationWindow() {
 	//load component dependencies
-	var FirstView = require('ui/FirstView');
+	var FirstView = require('ui/common/FirstView');
 		
 	//create component instance
 	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff',
-		navBarHidden:true,
-		exitOnClose:true
+		backgroundColor:'#ffffff'
 	});
 		
 	//construct UI
