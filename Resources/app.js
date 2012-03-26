@@ -31,13 +31,13 @@ if (Ti.version < 1.8 ) {
 		Window = require('ui/tablet/ApplicationWindow');
 	}
 	else {
-		// iPhone makes use of the platform-specific navigation controller,
-		// all other platforms follow a similar UI pattern
-		if (osname === 'iphone') {
-			Window = require('ui/handheld/ios/ApplicationWindow');
+		// Android uses platform-specific properties to create windows.
+		// All other platforms follow a similar UI pattern.
+		if (osname === 'android') {
+			Window = require('ui/handheld/android/ApplicationWindow');
 		}
 		else {
-			Window = require('ui/handheld/android/ApplicationWindow');
+			Window = require('ui/handheld/ApplicationWindow');
 		}
 	}
 	new Window().open();
