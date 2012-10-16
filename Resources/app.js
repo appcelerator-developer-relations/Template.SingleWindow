@@ -16,7 +16,7 @@ if (Ti.version < 1.8 ) {
 
 // This is a single context application with multiple windows in a stack
 (function() {
-	//determine platform and form factor and render appropriate components
+	//render appropriate components based on the platform and form factor
 	var osname = Ti.Platform.osname,
 		version = Ti.Platform.version,
 		height = Ti.Platform.displayCaps.platformHeight,
